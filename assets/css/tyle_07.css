@@ -498,44 +498,11 @@ input {
 .blog__main .content__text .text-readmore {
   color: #4399C9;
 }
-.blog__main .loadmore {
-  text-align: center;
-}
 .blog__main .loadmore__list {
-  margin: 0 auto;
-  padding: 0.5rem;
-  display: inline-flex;
-  gap: 0 0.5rem;
-  font-size: 1.2rem;
-  background-color: #FFFFFF;
-}
-.blog__main .loadmore__list .loadmore__arrow {
-  width: 2rem;
-  height: 2rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-wrap: nowrap;
-  border-radius: 50%;
-  color: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-}
-.blog__main .loadmore__list .loadmore__arrow-next {
-  color: black;
-  border-color: black;
-}
-.blog__main .loadmore__list .loadmore-link {
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  border: 1px solid rgba(0, 0, 0, 0.37);
-}
-.blog__main .loadmore__list .loadmore-link.active {
-  background-color: rgba(0, 0, 0, 0.37);
 }
 
-/*# sourceMappingURL=style_07.css.map */
+/*# sourceMappingURL=tyle_07.css.map */

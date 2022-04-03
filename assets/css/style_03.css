@@ -82,6 +82,7 @@ a {
   color: inherit;
   display: inline-block;
   text-decoration: none;
+  cursor: pointer;
 }
 a:hover {
   text-decoration: none;
@@ -96,11 +97,66 @@ button {
 button:focus, button:active, button:hover, button:visited, button:link {
   outline: none;
   border: none;
-  border-radius: 0px;
 }
 
 input {
+  outline: none;
   cursor: pointer;
+}
+
+select {
+  outline: none;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 0.6rem 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.7rem;
+  background-color: #4399C9;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+}
+.btn:hover {
+  outline: none;
+  border-radius: 0.5rem;
+}
+.btn:active {
+  outline: none;
+}
+@media (max-width: 991px) {
+  .btn {
+    padding: 0.5rem 2rem;
+  }
+}
+
+.btn-red {
+  padding: 0.8rem 4.5rem;
+  border-radius: 5px;
+  background-color: #F25A5A;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+
+.menu__item-link {
+  display: block;
+  padding: 1.6rem;
+  background-color: #C0DDF9;
+  border-radius: 0px 12px 12px 0px;
+  font-weight: 700;
+}
+.menu__item-link.active {
+  background-color: #F8D9CC;
+}
+
+.input__border-none {
+  border: none;
+  border-bottom: 1px solid #000000;
+  font-size: inherit;
 }
 
 .section-header {
@@ -295,6 +351,10 @@ input {
   border-radius: 0.5rem;
   border-width: 1px;
   outline: none;
+}
+.register__wraper select {
+  width: 79%;
+  padding: 1rem;
 }
 .register__wraper .form__control {
   padding: 2rem 0;

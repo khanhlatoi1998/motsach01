@@ -41,6 +41,9 @@
         padding: 2rem;
         background-color: $color-background-blog;
         border-radius: 2px;
+        .blog__image {
+            padding-top: 3rem;
+        }
         .content__control {
             @include flex(center, space-between, wrap);
             gap: 2rem;
@@ -77,8 +80,37 @@
             color:  $color-03;
         }
     }
-    .blog__image {
-        padding-top: 3rem;
+    .loadmore {
+        text-align: center;
     }
-    
+    .loadmore__list {
+        margin: 0 auto;
+        padding: 0.5rem;
+        display: inline-flex;
+        gap: 0 0.5rem;
+        font-size: 1.2rem;
+        background-color: $color-background-white;
+        .loadmore__arrow {
+            width: 2rem;
+            height: 2rem;
+            @include flex(center, center);
+            border-radius: 50%;
+            color: $color-gray-50;
+            border: 1px solid $color-gray-50;
+            cursor: pointer;
+        }
+        .loadmore__arrow-next {
+            color: black;
+            border-color: black;
+        }
+        .loadmore-link {
+            width: 2rem;
+            height: 2rem;
+            @include flex(center, center);
+            border: 1px solid $color-gray-37;
+        }
+        .loadmore-link.active {
+            background-color: $color-gray-37;
+        }
+    }
 }
