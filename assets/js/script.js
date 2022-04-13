@@ -30,11 +30,9 @@ const Validator = (options) => {
                 inputElement.addEventListener("blur", (e) => {
                     validate(e, rule, inputElement);
                 });
-                if (rule.selector !== "#email") {
-                    inputElement.addEventListener("input", (e) => {
-                        validate(e, rule, inputElement);
-                    });
-                }
+                inputElement.addEventListener("input", (e) => {
+                    validate(e, rule, inputElement);
+                });
             }
         })
     }
