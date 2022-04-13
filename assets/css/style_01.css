@@ -104,6 +104,11 @@ input {
   cursor: pointer;
 }
 
+select {
+  outline: none;
+  cursor: pointer;
+}
+
 .btn {
   padding: 0.6rem 3rem;
   text-transform: uppercase;
@@ -128,10 +133,7 @@ input {
 }
 
 .btn-red {
-  width: 15.1rem;
-  height: 3.9rem;
-  text-align: center;
-  line-height: 3.9rem;
+  padding: 0.8rem 4.5rem;
   border-radius: 5px;
   background-color: #F25A5A;
   outline: none;
@@ -226,6 +228,11 @@ input {
 .navbar__list .nav-link {
   padding: 1.2rem 3.4rem;
   font-weight: 700;
+}
+.navbar__list .register,
+.navbar__list .login {
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 .navbar__login {
@@ -920,6 +927,10 @@ input {
   border-width: 1px;
   outline: none;
 }
+.register__wraper select {
+  width: 79%;
+  padding: 1rem;
+}
 .register__wraper .form__control {
   padding: 2rem 0;
 }
@@ -1020,6 +1031,9 @@ input {
   background-color: #FFFFFF;
   border-radius: 2px;
 }
+.blog__main .blog-item .blog__image {
+  padding-top: 3rem;
+}
 .blog__main .blog-item .content__control {
   display: flex;
   align-items: center;
@@ -1058,8 +1072,44 @@ input {
 .blog__main .content__text .text-readmore {
   color: #4399C9;
 }
-.blog__main .blog__image {
-  padding-top: 3rem;
+.blog__main .loadmore {
+  text-align: center;
+}
+.blog__main .loadmore__list {
+  margin: 0 auto;
+  padding: 0.5rem;
+  display: inline-flex;
+  gap: 0 0.5rem;
+  font-size: 1.2rem;
+  background-color: #FFFFFF;
+}
+.blog__main .loadmore__list .loadmore__arrow {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.blog__main .loadmore__list .loadmore__arrow-next {
+  color: black;
+  border-color: black;
+}
+.blog__main .loadmore__list .loadmore-link {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  border: 1px solid rgba(0, 0, 0, 0.37);
+}
+.blog__main .loadmore__list .loadmore-link.active {
+  background-color: rgba(0, 0, 0, 0.37);
 }
 
 /*# sourceMappingURL=style_01.css.map */

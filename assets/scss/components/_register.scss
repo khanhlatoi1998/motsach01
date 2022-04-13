@@ -13,16 +13,59 @@
         width: 79%;
         padding: 1rem;
         padding-left: 2rem;
-        border-radius: 0.5rem;
+        border-radius: 0.7rem;
         border-width: 1px;
         outline: none;
+        position: relative;
+        &.input-err {
+            border: 1.5px solid $color-err;
+        }
+        &.input-success {
+            border: 1.5px solid $color-success;
+        }
+        &#phone {
+            background-image: none;
+        }
+    }
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    .form-message {
+        margin-left: 23%;
+        display: none;
+        &.message-err {
+            color: $color-err;
+        }
+        &.message-success {
+            color: $color-success;
+        }
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        right: 0rem;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-image: url("../images/vector-input.png");
+        height: 2rem;
+        width: 2.3rem;
+        cursor: pointer;
     }
     select {
         width: 79%;
         padding: 1rem;
+        border-radius: 0.7rem;
     }
     .form__control {
         padding: 2rem 0;
+    }
+    .register__btn {
+        text-align: center;
+        padding: 3rem 0;
+        .btn {
+            font-size: 2.7rem;
+            font-weight: 300;
+            background-color: $color-01;
+        }
     }
     .register__or {
         text-align: center;

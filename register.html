@@ -32,13 +32,16 @@
                         <li class="nav-item">
                             <a href="#FAQ" class="nav-link">FAQ</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav-item__login">
                             <a href="#introduce" class="nav-link login">Login</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="#FAQ" class="nav-link register">Register</a>
-                        </li>
+                        </li> -->
                     </ul>
+                    <!-- <div class="nav__login">
+                            <a href="#introduce" class="nav-link login">Login</a>
+                    </div> -->
                 </div>
                 <div class="menu">
                     <span class="menu-icon"><i class="fa-solid fa-bars"></i></span>
@@ -59,33 +62,42 @@
             <div class="register__wraper">
                 <form id="contact__form" class="contact__form" action="" method="post" name="contact__form">
                     <div class="form__control">
-                        <label class="" for="name">Name</label>
+                        <label class="form-label" for="name">Name</label>
                         <input class="control-input" type="text" id="name" name="name" placeholder=""/>  
+                        <p class="form-message">Enter name</p>
                     </div>
                     <div class="form__control">
-                        <label for="email">Email</label>
+                        <label class="form-label" for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder=""/>  
+                        <p class="form-message">Enter email</p>
                     </div>
                     <div class="form__control">
-                        <label for="password">Password</label>
+                        <label class="form-label" for="password">Password</label>
                         <input type="password" id="password" name="Password" placeholder=""/>  
+                        <p class="form-message">Enter password</p>
                     </div>
                     <div class="form__control">
-                        <label for="phone">Phone</label>
-                        <input type="text" id="phone" name="phone" placeholder=""/>  
+                        <label class="form-label" for="phone">Phone</label>
+                        <input type="number" id="phone" name="phone" placeholder=""/>  
+                        <p class="form-message">Enter phone</p>
                     </div>
                     <div class="form__control">
-                        <label for="date">Date of birth</label>
+                        <label class="form-label" for="date">Date of birth</label>
                         <input type="date" id="date" name="date">
+                        <p class="form-message">Enter date of birth</p>
                     </div>
                     <div class="form__control">
-                        <label for="gender">Gender</label>
+                        <label class="form-label" for="gender">Gender</label>
                         <select name="gender" id="gender">
                             <option value="volvo">Men</option>
                             <option value="volvo">Car</option>
                         </select>
                     </div>
+                    <div class="register__btn">
+                        <button class="btn" type="submit">Register</button>
+                    </div>    
                 </form>
+                
                 <div class="register__or"> OR </div>
                 <div class="register__continue">
                     <a href="#" class="continue__link-icon">
@@ -97,5 +109,9 @@
         </section>
     </main>
     <!-- VIEW : END -->
+
+    <script src="./assets/js/script.js?r=9"></script>
 </body>
+
+
 </html>

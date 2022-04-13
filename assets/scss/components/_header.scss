@@ -50,6 +50,11 @@
         padding: 1.2rem 3.4rem;
         font-weight: 700;
     }
+    .register,
+    .login {
+        font-weight: 400;
+        text-decoration: underline;
+    }
 }
 
 .navbar__login {
@@ -98,15 +103,22 @@
 
 // REGISTER 
 .section-header.register {
+    .navbar__text {
+        flex-grow: 0;
+
+    }
     .login, 
     .register {
         font-size: 1.8rem;
         text-decoration: underline;
         text-transform: uppercase;
-        font-weight: 800;
     }
     .navbar__logo {
         height: 10.1rem;
+    }
+    .nav-item__login {
+        margin-left: 7rem;
+        margin-top: -0.5rem;
     }
 }
 
