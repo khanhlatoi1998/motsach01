@@ -7,7 +7,7 @@ const Validator = (options) => {
         let target = e.target;
         let value = target.value;
         const messageInput = rule.test(value); 
-        const messageElement = inputElement.parentElement.querySelector('.form-message');
+        const messageElement = inputElement.parentElement.querySelector(options.errorSelector);
         
         if (messageInput === false) {
             inputElement.classList.add('input-err');
@@ -84,11 +84,12 @@ Validator.isDate = (selector) => {
 
 Validator({
     form: "#contact__form",
+    errorSelector: '.form-message', 
     rules: [
         Validator.isRequest("#name"),
         Validator.isEmail("#email"),
-        Validator.isPassword("#password"),
-        Validator.isPhone("#phone"),
-        Validator.isDate("#date"),
+        Validator.isRequest("#password"),
+        Validator.isRequest("#phone"),
+        Validator.isRequest("#date"),
     ]
 });
