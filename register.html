@@ -73,9 +73,14 @@
                     </div>
                     <div class="form__control">
                         <label class="form-label" for="password">Password</label>
-                        <input type="password" id="password" name="Password" placeholder=""/>  
-                        <p class="form-message">Enter password</p>
+                        <input type="password" id="password" name="password" placeholder=""/>  
+                        <p class="form-message">Enter minimum character 6</p>
                     </div>
+                    <!-- <div class="form__control">
+                        <label class="form-label" for="repeat-password">Repeat Password</label>
+                        <input type="password" id="repeat-password" name="repeat-password" placeholder=""/>  
+                        <p class="form-message">Enter password</p>
+                    </div> -->
                     <div class="form__control">
                         <label class="form-label" for="phone">Phone</label>
                         <input type="number" id="phone" name="phone" placeholder=""/>  
@@ -88,10 +93,11 @@
                     </div>
                     <div class="form__control">
                         <label class="form-label" for="gender">Gender</label>
-                        <select name="gender" id="gender">
-                            <option value="volvo">Men</option>
-                            <option value="volvo">Car</option>
+                        <select name="gender" id="gender" value="men">
+                            <option value="men">Men</option>
+                            <option value="car">Car</option>
                         </select>
+                        <p class="form-message">Enter date of birth</p>
                     </div>
                     <div class="register__btn">
                         <button class="btn" type="submit">Register</button>
