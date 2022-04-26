@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 *,
 *:after,
@@ -93,13 +93,16 @@ a:focus, a:active {
 
 button {
   cursor: pointer;
-}
-button:focus, button:active, button:hover, button:visited, button:link {
-  outline: none;
   border: none;
+  outline: none;
+  font-weight: 700;
+}
+input {
+  outline: none;
+  cursor: pointer;
 }
 
-input {
+select {
   outline: none;
   cursor: pointer;
 }
@@ -224,6 +227,11 @@ input {
   padding: 1.2rem 3.4rem;
   font-weight: 700;
 }
+.navbar__list .register,
+.navbar__list .login {
+  font-weight: 400;
+  text-decoration: underline;
+}
 
 .navbar__login {
   font-size: 1.8rem;
@@ -271,15 +279,21 @@ input {
   font-weight: 400;
 }
 
+.section-header.register .navbar__text {
+  flex-grow: 0;
+}
 .section-header.register .login,
 .section-header.register .register {
   font-size: 1.8rem;
   text-decoration: underline;
   text-transform: uppercase;
-  font-weight: 800;
 }
 .section-header.register .navbar__logo {
   height: 10.1rem;
+}
+.section-header.register .nav-item__login {
+  margin-left: 7rem;
+  margin-top: -0.5rem;
 }
 
 .section-header.content .navbar__logo {
@@ -536,6 +550,47 @@ input {
 }
 .blog__main .loadmore__list .loadmore-link.active {
   background-color: rgba(0, 0, 0, 0.37);
+}
+
+.section-blog.page--5 .blog__main {
+  padding-top: 0;
+}
+.section-blog.page--5 .blog__search {
+  background-color: transparent;
+  text-align: left;
+}
+.section-blog.page--5 .blog__main-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.section-blog.page--5 .text-desc {
+  padding-left: 0;
+}
+.section-blog.page--5 .content__control {
+  width: 100%;
+  padding: 0 2rem;
+}
+.section-blog.page--5 .content__control .control__text {
+  margin-top: -1.5rem;
+  flex-grow: 1;
+  justify-content: center;
+}
+.section-blog.page--5 .blog__main-heading {
+  margin-top: -3rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.section-blog.page--6 .content__control {
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+.section-blog.page--6 .content__control .control__btn {
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=style_07.css.map */

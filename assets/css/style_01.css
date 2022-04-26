@@ -805,12 +805,19 @@ select {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  gap: 2rem;
 }
 .section-view.page--2 .content__top .btn-edit {
   padding: 3rem 10rem;
   background-color: #C0DDF9;
+  margin-top: 1rem;
   border-radius: 0.5rem;
+}
+@media (max-width: 1200px) {
+  .section-view.page--2 .content__top .btn-edit {
+    padding: 2rem 3rem;
+  }
 }
 
 .products__wraper {

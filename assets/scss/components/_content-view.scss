@@ -191,13 +191,15 @@
 
 .section-view.page--2 {
     .content__top {
-        @include flex(flex-start, space-between, wrap);
+        @include flex(flex-start, space-between);
+        gap: 2rem;
         .btn-edit {
             padding: 3rem 10rem;
             background-color: $color-01;
+            margin-top: 1rem;
             border-radius: 0.5rem;
-            @include for-size(1199) {
-                
+            @include for-size(1200) {
+                padding: 2rem 3rem;
             }
         }
     }
