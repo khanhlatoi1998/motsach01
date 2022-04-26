@@ -188,3 +188,17 @@
         }
     }
 }
+
+.section-view.page--2 {
+    .content__top {
+        @include flex(flex-start, space-between, wrap);
+        .btn-edit {
+            padding: 3rem 10rem;
+            background-color: $color-01;
+            border-radius: 0.5rem;
+            @include for-size(1199) {
+                
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 *,
 *:after,
@@ -93,12 +93,10 @@ a:focus, a:active {
 
 button {
   cursor: pointer;
-}
-button:focus, button:active, button:hover, button:visited, button:link {
-  outline: none;
   border: none;
+  outline: none;
+  font-weight: 700;
 }
-
 input {
   outline: none;
   cursor: pointer;
@@ -281,15 +279,21 @@ select {
   font-weight: 400;
 }
 
+.section-header.register .navbar__text {
+  flex-grow: 0;
+}
 .section-header.register .login,
 .section-header.register .register {
   font-size: 1.8rem;
   text-decoration: underline;
   text-transform: uppercase;
-  font-weight: 800;
 }
 .section-header.register .navbar__logo {
   height: 10.1rem;
+}
+.section-header.register .nav-item__login {
+  margin-left: 7rem;
+  margin-top: -0.5rem;
 }
 
 .section-header.content .navbar__logo {
@@ -797,6 +801,18 @@ select {
   cursor: pointer;
 }
 
+.section-view.page--2 .content__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section-view.page--2 .content__top .btn-edit {
+  padding: 3rem 10rem;
+  background-color: #C0DDF9;
+  border-radius: 0.5rem;
+}
+
 .products__wraper {
   display: flex;
   align-items: flex-start;
@@ -923,16 +939,59 @@ select {
   width: 79%;
   padding: 1rem;
   padding-left: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.7rem;
   border-width: 1px;
   outline: none;
+  position: relative;
+}
+.register__wraper input.input-err {
+  border: 1.5px solid #ff0000bd;
+}
+.register__wraper input.input-success {
+  border: 1.5px solid green;
+}
+.register__wraper input#phone {
+  background-image: none;
+}
+.register__wraper input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.register__wraper .form-message {
+  margin-left: 23%;
+  display: none;
+}
+.register__wraper .form-message.message-err {
+  color: #ff0000bd;
+}
+.register__wraper .form-message.message-success {
+  color: green;
+}
+.register__wraper input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 0rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-image: url("../images/vector-input.png");
+  height: 2rem;
+  width: 2.3rem;
+  cursor: pointer;
 }
 .register__wraper select {
   width: 79%;
   padding: 1rem;
+  border-radius: 0.7rem;
 }
 .register__wraper .form__control {
   padding: 2rem 0;
+}
+.register__wraper .register__btn {
+  text-align: center;
+  padding: 3rem 0;
+}
+.register__wraper .register__btn .btn {
+  font-size: 2.7rem;
+  font-weight: 300;
+  background-color: #C0DDF9;
 }
 .register__wraper .register__or {
   text-align: center;

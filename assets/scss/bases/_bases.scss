@@ -92,13 +92,16 @@ a {
 
 button {
     cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 700;
     &:focus,
     &:active,
     &:hover,
     &:visited,
     &:link {
-        outline: none;
-        border: none;
+        // outline: none;
+        // border: none;
     }
 }
 
