@@ -1,0 +1,57 @@
+.form__book-editor {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem;
+    padding-bottom: 6rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    position: relative;
+    .form__book-editor__title {
+        font-size: 2.7rem;
+        font-family: 700;
+        text-align: center;
+    }
+    .form__group {
+        @include flex(center, center);
+        @include for-size (575) {
+            flex-wrap: wrap;
+        }
+        gap: 2rem;
+        + .form__group {
+            margin-top: 2rem;
+        }
+    }
+    label {
+        min-width: 20rem;
+    }
+    input {
+        flex-grow: 1;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    .image-book {
+        @include flex(center);
+        margin-top: 2rem;
+        .block__image {
+            margin-left: 20rem;
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+    .form__book-btn__create {
+        position: absolute;
+        bottom: 7rem;
+        right: 0rem;
+        background-color: $color-03;
+        color: $color-white;
+        padding: 1rem 1.5rem;
+        border: 1px solid black;
+        border-radius: 1rem;
+        @include for-size (991) {
+            bottom: 2rem;
+            right: 0;
+            transform: translate(-50%, 0);
+        }
+    }
+}
+

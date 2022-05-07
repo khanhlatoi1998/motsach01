@@ -1,0 +1,42 @@
+.book__table {
+    .block__image {
+        max-width: 8rem;
+        img {
+            width: 100%;
+        }
+    }
+    .book__table-title {
+        max-width: 15rem;
+        font-weight: 700;
+        font-size: 1.9rem;
+    }
+    .book__table-author {
+        max-width: 10rem;
+    }
+    thead {
+        border-bottom: 1px solid black;
+    }
+    tbody {
+        vertical-align: top;
+        font-size: 1.9rem;
+        font-weight: 700;
+        td {
+            padding: 2rem 1rem;
+        }
+        .btn-red {
+            width: 12rem;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .book__table-btn {
+            @include flex(flex-start, flex-start, wrap);
+            gap: 1rem;
+        }
+        .book__table-read {
+            cursor: pointer;
+        }
+    }
+    .loadmore {
+        margin-top: 7rem;
+    }
+}

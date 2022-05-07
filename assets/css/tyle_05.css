@@ -124,7 +124,7 @@ table {
 .sidebar {
   width: 20%;
 }
-@media (max-width: 1022px) {
+@media (max-width: 739px) {
   .sidebar {
     display: none;
   }
@@ -523,7 +523,7 @@ table {
 }
 
 .products__main {
-  flex-grow: 1;
+  width: 55%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem 4rem;
@@ -581,4 +581,4 @@ table {
   width: 100%;
 }
 
-/*# sourceMappingURL=style_05.css.map */
+/*# sourceMappingURL=tyle_05.css.map */

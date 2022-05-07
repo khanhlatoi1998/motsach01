@@ -26,6 +26,7 @@
     flex-grow: 1;
     @include flex(flex-start, space-between);
     @include for-size(991) {
+        display: block;
         position: absolute;
         top: 110%;
         right: 2rem;

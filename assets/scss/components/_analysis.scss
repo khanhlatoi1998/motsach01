@@ -1,0 +1,58 @@
+.track__analysis {
+    .analysis__reached {
+        text-align: center;
+        font-size: 2.5rem;
+        color: $color-07;
+        margin-top: 3rem;
+    }
+    .analysis__more {
+        font-weight: 700;
+        font-size: 2rem;
+        margin-top: 3rem;
+        text-align: center;
+        a {
+            text-decoration: underline ;
+        }
+            
+    }
+    table {
+        border-collapse: collapse;  
+        width: 100%;
+        tr {
+            border-top: 1px solid black;
+            td {
+                position: relative;
+                font-weight: 700;
+                text-align: right;
+                padding: 1rem;
+                padding-bottom: 5rem;
+                + td {
+                    border-left: 1px solid black;
+                }
+                .block__image {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        th {
+            padding: 1rem 0 ;
+            + th{
+                border-left: 1px solid black;
+            }
+        }
+    }
+}
+
+.analysis__table {
+    width: 90%;
+    margin: 0 auto;
+    background-color: $color-white;
+    p {
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+}
+

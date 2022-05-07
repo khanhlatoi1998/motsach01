@@ -1,0 +1,71 @@
+.track__pomodoro {
+    flex-grow: 1;
+    text-align: center  ;
+    .pomodoro__wraper {
+        padding: 3rem;
+        margin: 0 auto;
+        width: 85%;
+        background-color: $color-08;
+    }
+    .pomodoro__box {
+        padding: 2rem;
+        padding-bottom: 4rem;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        background-color: rgb(243 119 95 / 92%);;
+        .btn__toggle {
+            @include flex(center, space-between);
+            gap: 2rem;
+            padding: 1rem 4rem;
+            color: $color-white;
+            font-size: 1.5rem;
+            .toggle-item {
+                padding: 1rem;
+                &.active {
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+        .pomodoro__time {
+            font-size: 8rem;
+        }
+        .pomodoro__btn-start {
+            padding: 2rem 6rem;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: $color-08;
+            position: relative;
+        }
+        .pomodoro__btn-start::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #80808042;
+        }
+    }
+    p {
+        font-weight: 700;
+    }
+    .text-number {
+        margin-top: 2rem;
+    }
+    select {
+        margin-top: 3rem;
+        width: 50%;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid $color-white;
+    }
+    .pomodora__btn-add__tasks {
+        margin-top: 3rem;
+        width: 50%; 
+        padding: 2rem 0;
+        background-color: rgba(250, 111, 111, 0.8);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+

@@ -7,6 +7,39 @@
 //     }
 // }
 
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.sidebar {
+    width: 20%;
+    @include for-size(1022) {
+        display: none;
+    }
+    .sidebar-item + .sidebar-item {
+        margin-top: 3rem;
+    }
+    .sidebar__form {
+        margin-top: 2rem;
+        display: flex;
+        gap: 2rem;
+        input {
+            flex-grow: 1;
+            background-color:  rgba(196, 196, 196, 1);
+            border: none;
+            outline: none;
+        }
+        label {
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    }
+}
 
 .btn {
     padding: 0.6rem 3rem;
@@ -37,6 +70,12 @@
     border: none;
     color: white;
     font-weight: 700;
+    &.btn-white {
+        background-color: $color-09;
+        color:  $color-text;
+        font-size: 1.9rem;
+        font-weight: 700;
+    }
 }
 
 .menu__item-link {

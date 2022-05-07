@@ -24,6 +24,10 @@ html {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   font-size: 1.5rem;
   font-weight: 400;
@@ -100,10 +104,47 @@ button {
 input {
   outline: none;
   cursor: pointer;
+  padding-left: 1rem;
 }
 
 select {
   outline: none;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+.sidebar {
+  width: 20%;
+}
+@media (max-width: 739px) {
+  .sidebar {
+    display: none;
+  }
+}
+.sidebar .sidebar-item + .sidebar-item {
+  margin-top: 3rem;
+}
+.sidebar .sidebar__form {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.sidebar .sidebar__form input {
+  flex-grow: 1;
+  background-color: #c4c4c4;
+  border: none;
+  outline: none;
+}
+.sidebar .sidebar__form label {
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -137,6 +178,12 @@ select {
   outline: none;
   border: none;
   color: white;
+  font-weight: 700;
+}
+.btn-red.btn-white {
+  background-color: #ccc;
+  color: #000000;
+  font-size: 1.9rem;
   font-weight: 700;
 }
 
@@ -197,6 +244,7 @@ select {
 }
 @media (max-width: 991px) {
   .navbar__text {
+    display: block;
     position: absolute;
     top: 110%;
     right: 2rem;
@@ -339,6 +387,302 @@ select {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 10.6rem;
+}
+
+.section-track {
+  margin-top: 5rem;
+}
+.section-track .track__wraper {
+  padding: 0 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 3rem;
+  padding-bottom: 4rem;
+}
+
+.track__content {
+  flex-grow: 1;
+}
+.track__content .track__setting {
+  text-align: center;
+  border-left: 1px solid #414141;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  flex-wrap: wrap;
+  padding: 0 3rem;
+}
+.track__content .track__heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.track__content form {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.track__content .form__reading-hour {
+  margin-top: 3rem;
+}
+.track__content .track__btn {
+  margin-top: 3rem;
+  margin-left: 14.5rem;
+}
+.track__content .track__btn .track__setting {
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  background-color: #fff;
+}
+.track__content input {
+  padding: 1rem;
+}
+.track__content .track__text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #278E03;
+}
+
+.track__pomodoro {
+  flex-grow: 1;
+  text-align: center;
+}
+.track__pomodoro .pomodoro__wraper {
+  padding: 3rem;
+  margin: 0 auto;
+  width: 85%;
+  background-color: rgba(243, 131, 95, 0.92);
+}
+.track__pomodoro .pomodoro__box {
+  padding: 2rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgba(243, 119, 95, 0.92);
+}
+.track__pomodoro .pomodoro__box .btn__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  padding: 1rem 4rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.track__pomodoro .pomodoro__box .btn__toggle .toggle-item {
+  padding: 1rem;
+}
+.track__pomodoro .pomodoro__box .btn__toggle .toggle-item.active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.track__pomodoro .pomodoro__box .pomodoro__time {
+  font-size: 8rem;
+}
+.track__pomodoro .pomodoro__box .pomodoro__btn-start {
+  padding: 2rem 6rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: rgba(243, 131, 95, 0.92);
+  position: relative;
+}
+.track__pomodoro .pomodoro__box .pomodoro__btn-start::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #80808042;
+}
+.track__pomodoro p {
+  font-weight: 700;
+}
+.track__pomodoro .text-number {
+  margin-top: 2rem;
+}
+.track__pomodoro select {
+  margin-top: 3rem;
+  width: 50%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+}
+.track__pomodoro .pomodora__btn-add__tasks {
+  margin-top: 3rem;
+  width: 50%;
+  padding: 2rem 0;
+  background-color: rgba(250, 111, 111, 0.8);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.track__analysis .analysis__reached {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #278E03;
+  margin-top: 3rem;
+}
+.track__analysis .analysis__more {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+.track__analysis .analysis__more a {
+  text-decoration: underline;
+}
+.track__analysis table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.track__analysis table tr {
+  border-top: 1px solid black;
+}
+.track__analysis table tr td {
+  position: relative;
+  font-weight: 700;
+  text-align: right;
+  padding: 1rem;
+  padding-bottom: 5rem;
+}
+.track__analysis table tr td + td {
+  border-left: 1px solid black;
+}
+.track__analysis table tr td .block__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.track__analysis table th {
+  padding: 1rem 0;
+}
+.track__analysis table th + th {
+  border-left: 1px solid black;
+}
+
+.analysis__table {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.analysis__table p {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.book__table .block__image {
+  max-width: 8rem;
+}
+.book__table .block__image img {
+  width: 100%;
+}
+.book__table .book__table-title {
+  max-width: 15rem;
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+.book__table .book__table-author {
+  max-width: 10rem;
+}
+.book__table thead {
+  border-bottom: 1px solid black;
+}
+.book__table tbody {
+  vertical-align: top;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.book__table tbody td {
+  padding: 2rem 1rem;
+}
+.book__table tbody .btn-red {
+  width: 12rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+.book__table tbody .book__table-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.book__table tbody .book__table-read {
+  cursor: pointer;
+}
+.book__table .loadmore {
+  margin-top: 7rem;
+}
+
+.form__book-editor {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem;
+  padding-bottom: 6rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  position: relative;
+}
+.form__book-editor .form__book-editor__title {
+  font-size: 2.7rem;
+  font-family: 700;
+  text-align: center;
+}
+.form__book-editor .form__group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+@media (max-width: 575px) {
+  .form__book-editor .form__group {
+    flex-wrap: wrap;
+  }
+}
+.form__book-editor .form__group + .form__group {
+  margin-top: 2rem;
+}
+.form__book-editor label {
+  min-width: 20rem;
+}
+.form__book-editor input {
+  flex-grow: 1;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.form__book-editor .image-book {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  margin-top: 2rem;
+}
+.form__book-editor .image-book .block__image {
+  margin-left: 20rem;
+  width: 6rem;
+  height: 6rem;
+}
+.form__book-editor .form__book-btn__create {
+  position: absolute;
+  bottom: 7rem;
+  right: 0rem;
+  background-color: #4399C9;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+@media (max-width: 991px) {
+  .form__book-editor .form__book-btn__create {
+    bottom: 2rem;
+    right: 0;
+    transform: translate(-50%, 0);
+  }
 }
 
 .section-footer {
@@ -512,10 +856,12 @@ select {
 .blog__main .content__text .text-readmore {
   color: #4399C9;
 }
-.blog__main .loadmore {
+
+.loadmore {
   text-align: center;
 }
-.blog__main .loadmore__list {
+
+.loadmore__list {
   margin: 0 auto;
   padding: 0.5rem;
   display: inline-flex;
@@ -523,7 +869,7 @@ select {
   font-size: 1.2rem;
   background-color: #FFFFFF;
 }
-.blog__main .loadmore__list .loadmore__arrow {
+.loadmore__list .loadmore__arrow {
   width: 2rem;
   height: 2rem;
   display: flex;
@@ -535,11 +881,11 @@ select {
   border: 1px solid rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-.blog__main .loadmore__list .loadmore__arrow-next {
+.loadmore__list .loadmore__arrow-next {
   color: black;
   border-color: black;
 }
-.blog__main .loadmore__list .loadmore-link {
+.loadmore__list .loadmore-link {
   width: 2rem;
   height: 2rem;
   display: flex;
@@ -548,7 +894,7 @@ select {
   flex-wrap: nowrap;
   border: 1px solid rgba(0, 0, 0, 0.37);
 }
-.blog__main .loadmore__list .loadmore-link.active {
+.loadmore__list .loadmore-link.active {
   background-color: rgba(0, 0, 0, 0.37);
 }
 

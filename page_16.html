@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mọt Sách</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style_07.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+
+    <!-- HEADER : START -->
+    <header class="section-header content" id="header">
+        <div class="header__wraper">
+            <div class="container">
+                <div class="navbar">
+                    <div class="navbar__logo">
+                        <a href="#" class="logo-link">
+                            <img srcset="./assets/images/image01.png 2x" alt="" class="logo-image" />
+                        </a>
+                    </div>
+                    <div class="navbar__text">
+                        <ul class="navbar__list">
+                            <li class="nav-item">
+                                <a href="#homepage" class="nav-link active">Homepage</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#introduce" class="nav-link">Introduce</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#readinglist" class="nav-link">Reading List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#myblog" class="nav-link">My Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#trackreading" class="nav-link">Track Reading</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#bookrecommendation" class="nav-link">Book Recommendation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#faq" class="nav-link">FAQ</a>
+                            </li>
+                        </ul>
+                        <div class="navbar__login">
+                            <a href="#" class="login-name">Van Si Hung</a>
+                            <a href="#" class="login-user">Admin</a>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <span class="menu-icon"><i class="fa-solid fa-bars"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER : END -->
+
+    <!-- HERO IMAGE : START -->
+    <section class="section__hero-image">   
+    </section>
+    <!-- HERO IMAGE : END -->
+
+    <!-- VIEW : START -->
+    <main id="wraper-content">
+        <div class="container">
+            <div class="form__book-editor">
+                <h3 class="form__book-editor__title">Book information</h3>
+                <form action="post" class="form__book-editor" name="form__book-editor" id="form__book-editor">
+                    <div class="form__group">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title"/>
+                    </div>
+                    <div class="form__group">
+                        <label for="description">Description</label>
+                        <input type="text" name="description" id="description"/>
+                    </div>
+                    <div class="form__group">
+                        <label for="language">Language</label>
+                        <input type="text" name="language" id="language"/>
+                    </div>
+                    <div class="form__group">
+                        <label for="copyright">Copyright</label>
+                        <input type="text" name="copyright" id="copyright"/>
+                    </div>
+                    <div class="form__group">
+                        <label for="published">Published</label>
+                        <input type="text" name="published" id="published"/>
+                    </div>
+                    <div class="form__group">
+                        <label for="updated">updated</label>
+                        <input type="text" name="updated" id="updated"/>
+                    </div>
+                    <div class="form__group">
+                        <label for="created">Created</label>
+                        <input type="text" name="created" id="created"/>
+                    </div>
+                    <div class="form__group">
+                        <label for="page">Page</label>
+                        <input type="text" name="page" id="page"/>
+                    </div>
+                    <div class="image-book">
+                        <span>Image</span>
+                        <div class="block__image">
+                            <img class="image" src="./assets/images/blog/image07.png" alt="">
+                        </div>
+                    </div>
+                </form>
+                <button type="button" class="form__book-btn__create" name="form__book-btn__create" id="form__book-btn__create" >Create</button>
+            </div>
+        </div>
+    </main>
+    <!-- VIEW : END -->
+
+    <!-- FOOTER : START -->
+    <footer class="section-footer" id="footer">
+        <div class="footer__wraper">
+            <ul class="footer__link">
+                <li class="link-item">
+                    <a class="link" href="#">Subscribe to theMotSach</a>
+                </li>
+                <li class="link-item">
+                    <a class="link" href="#">Books F.A.Q.</a>
+                </li>
+                <li class="link-item">
+                    <a class="link" href="#">Email the Book Review</a>
+                </li>
+            </ul>
+            <div class="footer__text">
+                <h3 class="text-title">SIGN UP FOR RECEIVE NEW BOOKS REVIEW NEWSLETTER</h3>
+                <p class="text-content">Every Friday, be the first to see reviews, news and features <br />in MotSach Book Review.</p>
+            </div>
+            <div class="footer__contact">
+                <div class="contact-icon">
+                    <a href="#" class="icon-link">                    
+                        <img srcset="./assets/images/contact-fb.png 2x" alt="">
+                    </a>
+                </div>
+                <div class="contact-btn"><a href="#" class="contact-link">CONTACT</a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER : END -->
+</body>
+</html>

@@ -1,0 +1,19 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 14 | /         @include font-size (575) {
+ * 15 | |             flex-wrap: wrap;
+ * 16 | \         }
+ *    '
+ *   assets\scss\components\_form-book-editor.scss 14:9  @import
+ *   assets\scss\style_07.scss 13:9                      root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 14 \2502  \250c          @include font-size (575) {\a 15 \2502  \2502              flex-wrap: wrap;\a 16 \2502  \2514          }\a    \2575 \a   assets\\scss\\components\\_form-book-editor.scss 14:9  @import\a   assets\\scss\\style_07.scss 13:9                      root stylesheet";
+}

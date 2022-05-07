@@ -18,6 +18,10 @@ html {
     }
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
     font: {
         size: 1.5rem;
@@ -108,6 +112,7 @@ button {
 input {
     outline: none;
     cursor: pointer;
+    padding-left: 1rem;
 }
 
 select {

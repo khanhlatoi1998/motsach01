@@ -47,7 +47,7 @@
 }
 
 .products__main {
-    width: 55%;
+    flex-grow: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem 4rem;
