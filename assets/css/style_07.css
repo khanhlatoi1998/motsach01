@@ -124,7 +124,7 @@ table {
 .sidebar {
   width: 20%;
 }
-@media (max-width: 739px) {
+@media (max-width: 1022px) {
   .sidebar {
     display: none;
   }
